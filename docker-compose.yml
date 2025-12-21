@@ -1,0 +1,20 @@
+services:
+  db:
+    container_name: db
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: simplesave_api_development
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: /usr/bin/pg_isready
+      interval: 5s
+      timeout: 10s
+      retries: 120
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
