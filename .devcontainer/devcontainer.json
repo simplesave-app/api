@@ -1,18 +1,12 @@
 {
-  "name": "feenx-nix-dood",
-  "build": {
-   "dockerfile": "Dockerfile",
-   "context": ".."
-  },
-
-  "userEnvProbe": "loginShell",
-  "postCreateCommand": "cat ~/greeting.txt",
+  "image": "ghcr.io/rails/devcontainer/images/ruby:3.4.8",
+  "runArgs": ["--add-host=host.docker.internal:host-gateway"],
 
   "customizations": {
    "vscode": {
       "extensions": [
          "ms-azuretools.vscode-docker",
-         "arrterian.nix-env-selector"
+         "Shopify.ruby-lsp"
       ]
    }
   },
@@ -26,6 +20,7 @@
 			"version": "latest",
 			"enableNonRootDocker": "true",
 			"moby": "false"
-		}
+		},
+    "ghcr.io/rails/devcontainer/features/postgres-client:1.1.3": {}
 	}
 }
