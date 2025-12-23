@@ -30,6 +30,9 @@
 /tmp/storage/*
 !/tmp/storage/.keep
 
+# Ignore db test files.
+db/test.*
+
 # Ignore CI service files.
 /.github
 
