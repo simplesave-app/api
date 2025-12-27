@@ -8,12 +8,11 @@
          "ms-azuretools.vscode-docker",
          "Shopify.ruby-lsp"
       ]
+   },
+   "settings": {
+      "remote.containers.copyGitConfig": true
    }
   },
-
-  "mounts": [
-    "source=${env:SSH_AUTH_SOCK},target=/ssh-agent,type=bind,consistency=cached"
-  ],
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
