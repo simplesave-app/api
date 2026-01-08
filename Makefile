@@ -1,3 +1,4 @@
+.PHONY: up down logs build test run
 up:
 	@docker-compose -f docker-compose.yml up -d
 down:
@@ -9,4 +10,4 @@ build:
 test:
 	@rails test
 run:
-	@rails server -b
+	@rails server
