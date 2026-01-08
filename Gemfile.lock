@@ -138,7 +138,8 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.27.0)
+    minitest (6.0.1)
+      prism (~> 1.5)
     minitest-reporters (1.7.1)
       ansi
       builder
@@ -328,7 +329,7 @@ DEPENDENCIES
   brakeman
   debug
   kamal
-  minitest (~> 5.0)
+  minitest (~> 6.0)
   minitest-reporters
   pg (~> 1.6)
   puma (>= 5.0)

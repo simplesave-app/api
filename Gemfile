@@ -47,7 +47,7 @@ group :development, :test do
 
   # Testing Framework
   # Minitest 6.0+ is having some issues with how tests are currently written
-  gem "minitest", "~> 5.0"
+  gem "minitest", "~> 6.0"
   gem "minitest-reporters"
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
