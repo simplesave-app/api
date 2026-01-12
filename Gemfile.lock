@@ -75,7 +75,6 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    ansi (1.5.0)
     ast (2.4.3)
     base64 (0.3.0)
     bcrypt (3.1.21)
@@ -138,12 +137,8 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.27.0)
-    minitest-reporters (1.7.1)
-      ansi
-      builder
-      minitest (>= 5.0)
-      ruby-progressbar
+    minitest (6.0.1)
+      prism (~> 1.5)
     msgpack (1.8.0)
     net-imap (0.6.2)
       date
@@ -328,8 +323,7 @@ DEPENDENCIES
   brakeman
   debug
   kamal
-  minitest (~> 5.0)
-  minitest-reporters
+  minitest (~> 6.0)
   pg (~> 1.6)
   puma (>= 5.0)
   rails (~> 8.1.2)
