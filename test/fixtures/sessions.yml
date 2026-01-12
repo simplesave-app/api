@@ -1,0 +1,6 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+alice_session:
+  user: alice
+  token: <%= SecureRandom.hex(32) %>
+  expires_at: <%= 30.days.from_now %>

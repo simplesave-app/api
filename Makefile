@@ -1,4 +1,4 @@
-.PHONY: up down logs build test run
+.PHONY: up down logs build test run migrate
 up:
 	@docker-compose -f docker-compose.yml up -d
 down:
@@ -11,3 +11,5 @@ test:
 	@rails test
 run:
 	@rails server
+migrate:
+	@rails db:migrate
