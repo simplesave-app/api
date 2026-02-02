@@ -8,6 +8,7 @@ class Session < ApplicationRecord
   validates :token, presence: true, uniqueness: true
   validates :expires_at, presence: true
 
+  before_validation :generate_token, on: :create
   before_validation :set_expiration, on: :create
 
   def revoked?

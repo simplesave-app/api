@@ -8,8 +8,8 @@ logs:
 build:
 	@docker build --build-arg RAILS_MASTER_KEY=$(cat config/master.key) -f Dockerfile -t simplesave-api:latest .
 test:
-	@rails test
+	@bin/rails test
 run:
-	@rails server
+	@bin/rails server
 migrate:
-	@rails db:migrate
+	@bin/rails db:migrate

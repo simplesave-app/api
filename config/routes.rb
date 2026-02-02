@@ -7,6 +7,11 @@ Rails.application.routes.draw do
       # Application
       resources :application
 
+      # V1 Namespace
+      namespace :auth do
+        post :register
+      end
+
       # Root
       root to: "root#index"
     end
