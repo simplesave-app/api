@@ -13,3 +13,5 @@ run:
 	@bin/rails server
 migrate:
 	@bin/rails db:migrate
+create:
+	@bin/rails db:create
