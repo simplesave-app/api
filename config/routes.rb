@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       # V1 Namespace
       namespace :auth do
         post :register
+        post :login
       end
 
       # Root
