@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deliver GitHub Issue"
+  short_description: "Take an issue safely from intake to release"
+  default_prompt: "Use $deliver-github-issue to take GitHub issue #13 from intake through a reviewed pull request."
