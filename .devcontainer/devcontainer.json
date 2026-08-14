@@ -1,12 +1,16 @@
 {
-  "image": "ghcr.io/rails/devcontainer/images/ruby:3.4.8",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "runArgs": ["--add-host=host.docker.internal:host-gateway"],
 
   "customizations": {
    "vscode": {
       "extensions": [
          "ms-azuretools.vscode-docker",
-         "Shopify.ruby-lsp"
+         "Shopify.ruby-lsp",
+         "openai.chatgpt",
+         "openai.codex"
       ]
    },
    "settings": {
